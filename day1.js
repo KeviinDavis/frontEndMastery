@@ -150,7 +150,7 @@ const packageSort = (weight) =>
 const stockCount = count =>
     count === 0 ? "Out of Stock" : count <= 5 ? "Low Stock" : "In Stock";
 
-console.log(stockCount(0));
-console.log(stockCount(3));
-console.log(stockCount(5));
-console.log(stockCount(10));
+// console.log(stockCount(0));
+// console.log(stockCount(3));
+// console.log(stockCount(5));
+// console.log(stockCount(10));
