@@ -139,8 +139,7 @@ const transAmount = (transaction) =>
 // console.log(transAmount(75));
 
 
-const packageSort = (weight) => 
-    weight < 1 ? "light" : weight <= 5 ? "standard" : "heavy";
+ 
 
 // console.log(packageSort(0.5));
 // console.log(packageSort(3));
