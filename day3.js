@@ -203,6 +203,23 @@ return {
 
 const myBooks = bookList();
 
-myBooks.addBook("Queer Lord");
-myBooks.addBook("Dairey of Sabinta");
-console.log(myBooks.listBooks());
+// myBooks.addBook("Queer Lord");
+// myBooks.addBook("Dairey of Sabinta");
+// console.log(myBooks.listBooks());
+
+function createToggle(){
+let on = false;
+
+    return {
+    flip: function(){
+        on = !on;
+        return on;
+        }
+    }
+}
+
+const toggle = createToggle();
+
+// console.log(toggle.flip());
+// console.log(toggle.flip());
+// console.log(toggle.flip());
