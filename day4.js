@@ -306,3 +306,61 @@ inventory.forEach(lowStock =>{
     }
 });
   
+
+// function reverseString(){
+
+// }
+
+
+//Reverse a string manually using a decrementing loop
+function reverseString(str){
+let newString = "";
+    for(let i = str.length - 1; i>= 0; i--){
+        newString += str[i];
+    }
+    return newString
+}
+
+// console.log(reverseString("Hello"))
+
+//Reverse a string using a built in javascript method of split, reverse, and join.
+function reverseString(str) {
+    return str.split('').reverse().join('');
+  }
+
+// function fizzLogger(num){
+// for(let i = 0; i <= 20; i++){
+// if(num % 3 === 0 ? console.log("Fizz") : num % 5 === 0 ? console.log("Buzz") : console.log(num[i]))
+//     }
+
+// }
+
+
+function fizzLogger(limit){
+for(let i = 1; i <= limit; i++){
+    
+if((i % 3 === 0) && (i % 5 === 0)){
+    console.log("FizzBuzz");
+} else if (i % 3 === 0){
+    console.log("Fizz")
+} else if (i % 5 === 0){
+    console.log("Buzz")
+} else {
+     console.log(i);
+}
+    }
+}
+
+// fizzLogger(20)
+
+function getMax(num){
+    let largest = num[0];
+
+    for (const n of num){
+        if(n > largest){
+            largest = n;
+        }
+    }
+    return largest;
+}
+console.log(getMax([3, 8, 2, 20, 14])); // → 20
